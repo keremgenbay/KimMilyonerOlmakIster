@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOyunEkrani));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSureStop = new System.Windows.Forms.Button();
             this.btnSiradakiSoruJokeri = new System.Windows.Forms.Button();
             this.btnWhatsappArama = new System.Windows.Forms.Button();
             this.txtSoru5 = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.txtSoru10 = new System.Windows.Forms.TextBox();
             this.txtSoru4 = new System.Windows.Forms.TextBox();
             this.txtSoru8 = new System.Windows.Forms.TextBox();
+            this.txtSorux = new System.Windows.Forms.TextBox();
             this.txtSoru12 = new System.Windows.Forms.TextBox();
             this.lblSoruSuresi = new System.Windows.Forms.Label();
             this.btnD = new System.Windows.Forms.Button();
@@ -54,8 +56,6 @@
             this.lblOdul = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnSureStop = new System.Windows.Forms.Button();
-            this.txtSorux = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -94,11 +94,23 @@
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
             // 
+            // btnSureStop
+            // 
+            this.btnSureStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSureStop.Location = new System.Drawing.Point(354, 253);
+            this.btnSureStop.Name = "btnSureStop";
+            this.btnSureStop.Size = new System.Drawing.Size(166, 64);
+            this.btnSureStop.TabIndex = 6;
+            this.btnSureStop.Text = "Süreyi Durdur";
+            this.btnSureStop.UseVisualStyleBackColor = true;
+            this.btnSureStop.Click += new System.EventHandler(this.btnSureStop_Click);
+            // 
             // btnSiradakiSoruJokeri
             // 
+            this.btnSiradakiSoruJokeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiradakiSoruJokeri.Location = new System.Drawing.Point(354, 165);
             this.btnSiradakiSoruJokeri.Name = "btnSiradakiSoruJokeri";
-            this.btnSiradakiSoruJokeri.Size = new System.Drawing.Size(166, 57);
+            this.btnSiradakiSoruJokeri.Size = new System.Drawing.Size(166, 62);
             this.btnSiradakiSoruJokeri.TabIndex = 5;
             this.btnSiradakiSoruJokeri.Text = "Sıradaki Soruya Geçme Jokeri";
             this.btnSiradakiSoruJokeri.UseVisualStyleBackColor = true;
@@ -106,9 +118,10 @@
             // 
             // btnWhatsappArama
             // 
+            this.btnWhatsappArama.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnWhatsappArama.Location = new System.Drawing.Point(354, 78);
             this.btnWhatsappArama.Name = "btnWhatsappArama";
-            this.btnWhatsappArama.Size = new System.Drawing.Size(166, 57);
+            this.btnWhatsappArama.Size = new System.Drawing.Size(166, 62);
             this.btnWhatsappArama.TabIndex = 4;
             this.btnWhatsappArama.Text = "Whatsapp Jokeri";
             this.btnWhatsappArama.UseVisualStyleBackColor = true;
@@ -225,6 +238,17 @@
             this.txtSoru8.TabIndex = 12;
             this.txtSoru8.Text = "100.000$";
             // 
+            // txtSorux
+            // 
+            this.txtSorux.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSorux.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSorux.Location = new System.Drawing.Point(63, 158);
+            this.txtSorux.Name = "txtSorux";
+            this.txtSorux.ReadOnly = true;
+            this.txtSorux.Size = new System.Drawing.Size(148, 38);
+            this.txtSorux.TabIndex = 8;
+            this.txtSorux.Text = "750.000$";
+            // 
             // txtSoru12
             // 
             this.txtSoru12.BackColor = System.Drawing.SystemColors.Window;
@@ -334,27 +358,6 @@
             this.button5.Text = "ÇEKİL";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnSureStop
-            // 
-            this.btnSureStop.Location = new System.Drawing.Point(354, 253);
-            this.btnSureStop.Name = "btnSureStop";
-            this.btnSureStop.Size = new System.Drawing.Size(166, 59);
-            this.btnSureStop.TabIndex = 6;
-            this.btnSureStop.Text = "Süreyi Durdur";
-            this.btnSureStop.UseVisualStyleBackColor = true;
-            this.btnSureStop.Click += new System.EventHandler(this.btnSureStop_Click);
-            // 
-            // txtSorux
-            // 
-            this.txtSorux.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSorux.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSorux.Location = new System.Drawing.Point(63, 158);
-            this.txtSorux.Name = "txtSorux";
-            this.txtSorux.ReadOnly = true;
-            this.txtSorux.Size = new System.Drawing.Size(148, 38);
-            this.txtSorux.TabIndex = 8;
-            this.txtSorux.Text = "750.000$";
             // 
             // FrmOyunEkrani
             // 
